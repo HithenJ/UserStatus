@@ -12,4 +12,4 @@ export class StatussrvcService {
    let url="https://gorest.co.in/public/v2/users";
    return this.http.get(url);
  }
-}
+} 
