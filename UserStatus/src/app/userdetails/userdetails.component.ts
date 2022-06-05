@@ -10,7 +10,7 @@ import { StatussrvcService } from '../status/statussrvc.service';
   styleUrls: ['./userdetails.component.css'
   
   ]
-})
+}) 
 export class UserdetailsComponent implements OnInit {
  
   users:any;
