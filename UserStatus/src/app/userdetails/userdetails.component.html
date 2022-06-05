@@ -1,0 +1,23 @@
+<table class="table table-borderless">
+    <thead>
+      <tr padding="10"> 
+        <th scope="col">S.no</th>
+        <th scope="col">FullName</th>
+        <th scope="col">Email</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Status</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userdata">
+        
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.gender}}</td>
+        <td class="circle" [ngStyle]="{color:user.status ==='active'?'green' :'red'}" ><i style="size: 25px;"  class="bi bi-circle-fill"></i><p hidden>{{user.status}}</p></td>
+ 
+      </tr>
+      </tbody>
+    </table>
